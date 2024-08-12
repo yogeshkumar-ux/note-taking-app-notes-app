@@ -1,6 +1,11 @@
-.App {
+.app {
   text-align: center;
+  background-color: #202124;
+
+  
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -24,6 +29,13 @@
   color: white;
 }
 
+.main-content {
+flex-grow: 1;
+padding: 20px;
+display: flex;
+flex-direction: column;
+background: #202124;
+}
 .App-link {
   color: #61dafb;
 }

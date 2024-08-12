@@ -1,26 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
+import Sidebar from './components/Sidebar';
+import NoteForm from './components/NoteForm';
+import NotesList from './components/NotesList';
+import Taskbar from './components/Taskbar';
 import './App.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { addNote, deleteNote, pinNote, unpinNote, updateNote } from './features/notesSlice';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const notes = useSelector((state: any) => state.notes.notes);
+    const dispatch = useDispatch();
+
+    const handleAddNote = (note: any) => {
+        dispatch(addNote(note));
+    };
+
+    const handleDeleteNote = (id: number) => {
+        dispatch(deleteNote(id));
+    };
+
+    const handlePinNote = (id: number) => {
+        dispatch(pinNote(id));
+    };
+
+    const handleUnpinNote = (id: number) => {
+        dispatch(unpinNote(id));
+    };
+
+    const handleUpdateNote = (note: any) => {
+        dispatch(updateNote(note));
+    };
+
+    return (
+        <div className="app">
+            <Sidebar />
+            <Taskbar/>
+
+           
+            <div className="main-content">
+                <NoteForm  />
+                <NotesList 
+                    notes={notes} 
+                    pinNote={handlePinNote} 
+                    unpinNote={handleUnpinNote} 
+                    deleteNote={handleDeleteNote} 
+                    updateNote={handleUpdateNote}
+                />
+            </div>
+        </div>
+    );
+};
 
 export default App;
