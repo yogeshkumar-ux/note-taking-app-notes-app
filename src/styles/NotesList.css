@@ -15,13 +15,12 @@
     justify-content: space-between;
     color: #e8eaed;
     border: 1px solid #5f6368;
-    background-color: #202124;
+    background-color: #292929;
     width: 226px; 
     min-height: 100px;
     box-sizing: border-box; 
-    /* overflow-wrap: break-word; */
     letter-spacing: .00625em;
-    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 500;
 
@@ -131,7 +130,7 @@
 
     .icon-text {
         position: absolute;
-        top: calc(100% + 5px); /* Positions the tooltip below the parent element with a small gap */
+        top: calc(100% + 5px); 
         left: 50%;
         transform: translateX(-50%);
         background-color: #444;

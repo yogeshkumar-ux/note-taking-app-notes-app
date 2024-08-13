@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #202124;
+    background-color: #292929;
     padding-top: 20px;
     box-sizing: border-box;
     /* display: none; */
@@ -45,7 +45,7 @@
 
 
     letter-spacing: .0178571429em;
-    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     font-size: .875rem;
     font-weight: 500;
     line-height: 1.25rem;
@@ -55,7 +55,7 @@
 
 .sidebar li.active,
 .sidebar li:hover {
-    background-color: #41331c;
+    background-color: #646464;
 }
 
 .sidebar li img {

@@ -24,7 +24,7 @@ const Sidebar: React.FC = ()=> {
         </li>
         <li>
         <EditOutlinedIcon/>
-        <span className='sidebar-name'>   Edit labels</span>
+        <span className='sidebar-name'>labels</span>
        
         </li>
         <li>

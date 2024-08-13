@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  background-color: #202124;
+  background-color: #292929;
 
   
 }
@@ -34,7 +34,7 @@ flex-grow: 1;
 padding: 20px;
 display: flex;
 flex-direction: column;
-background: #202124;
+background: #292929;
 }
 .App-link {
   color: #61dafb;

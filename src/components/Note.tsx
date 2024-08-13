@@ -20,7 +20,7 @@ const Note = ({ note, pinNote, unpinNote, deleteNote }: any) => {
  
     return (
         <div className="note-grid" >
-        <div className={`note-card ${note.isPinned ? 'pinned' : ''}`} style={{ backgroundColor: note.color || '#202124' }}>
+        <div className={`note-card ${note.isPinned ? 'pinned' : ''}`} style={{ backgroundColor: note.color || '#292929' }}>
   
       {note.image && <img src={note.image} alt="Note" style={{ maxWidth: '100%', borderRadius: '4px' }} />}
       <div className="note-actions">

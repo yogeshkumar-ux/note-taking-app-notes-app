@@ -12,14 +12,10 @@ const Taskbar: React.FC = () => {
         <div className="taskbar">
             <div className="left-section">
                 <button className="menu-button">&#9776;</button>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Keep_icon_%282015-2020%29.svg/2048px-Google_Keep_icon_%282015-2020%29.svg.png" alt="Keep Logo" className="logo" />
                 <span className="app-name">Noted</span>
             </div>
             <div className="center-section">
-                <div className="search-container">
-                    <span className="search-icon"><SearchIcon/></span>
-                    <input type="text" className="search-input" placeholder="Search" />
-                </div>
+               
             </div>
             <div className="right-section">
                 <div className="group-right">

@@ -4,10 +4,10 @@
     justify-content: space-between;
     padding: 5px 10px;
     height: 60px;
-    background-color: #202124;
+    background-color: #292929;
     position: sticky;
-    top: 0; /* Ensure the taskbar sticks to the top */
-    z-index: 1000; /* Ensure the taskbar stays above other elements */
+    top: 0; 
+    z-index: 1000; 
     border-bottom:   1px solid #5f6368;
     ;
 }
@@ -41,7 +41,6 @@
 .app-name {
     font-size: 23px;
     color: white;
-    font-family: "Product Sans", Arial, sans-serif;
 }
 
 .search-container {
@@ -64,7 +63,6 @@
     border: none;
     margin-left: 10px;
     outline: none;
-    font: normal 16px Google Sans, Roboto, Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, .87)
 }
 
